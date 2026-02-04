@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Externe lettertype -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== MOBILE FIRST ===== */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #b4c3d1;
+        }
+
+        /* Grid basis */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            height: 400px;
+            background-image: url("Woubrugge.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        header h1 {
+            /*background-color: rgba(0, 0, 0, 0.5);*/
+            font-size: 100px;
+            padding: 10px 20px;
+        }
+
+        /* Centrale layout */
+        main {
+            padding: 10px;
+        }
+
+        /* Linker gedeelte */
+        #links {
+            background-color: #cfd8dc;
+            ;
+            padding: 15px;
+        }
+
+        /* Rechter gedeelte */
+        #rechts {
+            background-color: #e3f2fd;
+            padding: 15px;
+        }
+
+        .artikel {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .artikel img {
+            width: 150px;
+            margin-right: 5px;
+            border-radius: 5px;
+            border: 2px solid white;
+            padding: 5px;
+            height: fit-content;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* ===== DESKTOP ===== */
+        @media only screen and (min-width: 768px) {
+
+            .artikel img {
+                width: 300px;  
+            }
+            body {
+                background-color: #ffffff;
+                /* desktop kleur */
+            }
+
+            #links {
+                background-color: #a49fb1;
+            }
+
+            #rechts {
+                background-color: #908aaf;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Woubrugge</h1>
+    </header>
+
+    <main class="row">
+
+        <!-- Linkerdeel: 2 kolommen -->
+        <section id="links" class="col-2">
+            <h2>Feitjes</h2>
+            <ul>
+                <li>Woubrugge ligt in Zuid-Holland</li>
+                <li>Het dorp ligt aan de Woudwetering</li>
+                <li>Woubrugge hoort bij gemeente Kaag en Braassem</li>
+                <li>Het heeft een landelijk karakter</li>
+                <li>Populatie van enkele duizenden inwoners</li>
+            </ul>
+        </section>
+
+        <!-- Rechterdeel: 9 kolommen -->
+        <section id="rechts" class="col-9">
+            <h2>Wat te doen in Woubrugge:</h2>
+
+            <div class="artikel">
+                <div>
+                    <h3>Jachtwerf van der Laan; Jachtverhuur.</h3>
+                    <a href="https://www.laanyacht.nl/"> Botenverhuur </a>
+                    <p>
+                        Jachtverhuur
+                        Een goede voorbereiding is het halve werk
+                        Bij afvaart krijgt u toelichting over het jacht waarop u gaat varen; met een beknopte
+                        schipperstraining wordt u in de praktijk gewezen waarop u moet letten tijdens het varen. Zeker
+                        als u geen vaarervaring heeft is het belangrijk dat meevarende ook betrokken zijn bij de uitleg
+                        en de voorbereiding. Met name bij het aanleggen, knopen en kaartlezen.
+
+                        Wij waarderen het zeer als u zich voor aankomst voorbereid heeft met de verkeersregels op het
+                        water (meer op https://www.varendoejesamen.nl/).
+
+                        Voor beginners adviseren wij een motorjacht te kiezen tot 9.50 meter. Geen verhuur aan
+                        studenten/jeugdgroepen!
+                    </p>
+                </div>
+                <img src="jacht.jpg" alt="jacht.jpg">
+            </div>
+
+            <div class="artikel">
+                <div>
+                    <h3>Tunn Sauna, bij mariahoeve-logies</h3>
+                    <a href="https://mariahoeve-logies.nl/en/sauna"> Tunn Sauna </a>
+                    <p>
+                        House Rules
+
+                        Opening Hours: 07:00 - 23:00.
+
+                        The heater gets hot; do not touch it or cover it.
+
+                        Wearing swimwear in this sauna is mandatory
+
+                        Showering before using the sauna is mandatory.
+
+                        It is mandatory to sit or lie on a towel inside the sauna.
+
+                        Shoes, slippers, or any other footwear are not allowed in the sauna.
+
+                        Drinking water is allowed; other drinks, food, smoking, and drugs are not permitted.
+
+                        Only clean water may be used for pouring water on the heater. The use of personal products in
+                        the sauna is not allowed.
+
+                        Close all doors and leave the sauna clean and tidy. Take all your belongings and trash with you
+                        when you leave.
+
+                        Independent use of the sauna is allowed from the age of 18. The minimum age for visitors is 12,
+                        provided they are accompanied by an adult.
+
+                        Respect other guests. Verbally or non-verbally disruptive behavior, intimate physical contact,
+                        and taking photos or videos of other guests are not allowed.
+
+                        Do not use the sauna if you are under the influence of drugs or alcohol, have a fever, or show
+                        other symptoms of illness.
+                    </p>
+                </div>
+                <img src="sauna.jpg" alt="Attractie 2">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 – Woubrugge
+    </footer>
+
+</body>
+
+</html>
